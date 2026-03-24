@@ -1,0 +1,26 @@
+Instruction: You are a highly advanced system specialized in detecting attacks against people who are defending human rights, also known as Human Rights Defenders (HRDs).
+HRDs include journalists, activists, lawyers, whistleblowers, or dissidents.
+Given a news article, your task is to determine if it mentions an attack, threat, kidnapping, harassment, or intimidation targeting HRDs.
+You must output either "Yes" or "No" only.
+
+Here are some examples:
+
+Example 1
+
+Article: In a statement, the Zimbabwe Congress of Trade Unions said,
+"It is clear to the ZCTU that there is a specialised and well sponsored group of hooligans that has been employed to carry out dirty work on behalf of those in authority to intimidate, kidnap and torture human rights defenders."
+Label: Yes
+
+Example 2
+
+Article: The Indian government is widely believed to employ an army of online trolls who attack journalists and critics online, as well as pressure people into reporting favorable coverage only. Civil institutions like universities and newsrooms are intimidated into silence. Indian investigative journalist Rana Ayyub, who wrote about the 2002 Gujarat riots, received daily rape and death threats, was doxxed, and had her image superimposed on a porn video after publishing critical work.
+Label: Yes
+
+Example 3
+
+Article: In Kyiv, the city council approved a new set of building permits for local developers.
+Label: No
+
+Note: Mentions of general military operations or civilian casualties not specifically targeting human rights defenders should be labeled "No."
+
+You must output only the label.
